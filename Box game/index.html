@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+  		<!-- Game canvas -->
+<canvas id="c"></canvas>
+
+<!-- Gameplay HUD -->
+<div class="hud">
+	<div class="hud__score">
+		<div class="score-lbl"></div>
+		<div class="cube-count-lbl"></div>
+	</div>
+	<div class="pause-btn"><div></div></div>
+	<div class="slowmo">
+		<div class="slowmo__bar"></div>
+	</div>
+</div>
+
+<!-- Menu System -->
+<div class="menus">
+	<div class="menu menu--main">
+		<h1>BOX SLASH</h1>
+		<button type="button" class="play-normal-btn">Custom</button>
+		<button type="button" class="play-casual-btn">Free Casual</button>
+		<div class="credits">Restart<a href="https://cmiller.tech">Status</a></div>
+	</div>
+	<div class="menu menu--pause">
+		<h1>PAUSE</h1>
+		<button type="button" class="resume-btn">Restart</button>
+		<button type="button" class="menu-btn--pause">MENU</button>
+	</div>
+	<div class="menu menu--score">
+		<h1>Perdiste!</h1>
+		<h2>Puntos:</h2>
+		<div class="final-score-lbl"></div>
+		<div class="high-score-lbl"></div>
+		<button type="button" class="play-again-btn">VOLVER A JUGAR</button>
+		<button type="button" class="menu-btn--score">MENU</button>
+	</div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
